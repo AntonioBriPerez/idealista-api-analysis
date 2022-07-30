@@ -44,28 +44,40 @@ def read_idealista_secrets(keys_path):
     return key, secret
 
 
+def get_available_cities():
+    return [c for c in json.load(open("cities.json", "r"))]
+
+
 def main():
-    for n in range(1, 3):
-        data = []
-        print(f"Iter:{n}")
-        params = {
-            "operation": "sale",
-            "locationId": get_city("elche"),
-            "locationLevel": 6,
-            "propertyType": "homes",
-            "locale": "es",
-            "maxItems": 1,
-            "maxPrice": 200000,
-            "minPrice": 100000,
-            "numPage": n,
-        }
+    for c in get_available_cities():
+        for n in range(1, 3):
+            """
+            #TODO:
+            #! desacoplar diccionario params de la ciudad para poder elegir elegir los
+            #! parametros de búsqueda en funcion de la ciudad
 
-        idealista = Idealista(
-            *read_idealista_secrets(f"{os.path.expanduser('~')}/.idealista_keys")
-        )
-        data.append(idealista.make_request("POST", params, country="es"))
+            """
 
-        register_data(params, data)
+            data = []
+            print(f"Page:{n}")
+            params = {
+                "operation": "sale",
+                "locationId": c,
+                "locationLevel": 6,
+                "propertyType": "homes",
+                "locale": "es",
+                "maxItems": 1,
+                "maxPrice": 200000,
+                "minPrice": 100000,
+                "numPage": n,
+            }
+
+            idealista = Idealista(
+                *read_idealista_secrets(f"{os.path.expanduser('~')}/.idealista_keys")
+            )
+            data.append(idealista.make_request("POST", params, country="es"))
+
+            register_data(params, data)
 
 
 if __name__ == "__main__":
