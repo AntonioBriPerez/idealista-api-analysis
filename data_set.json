@@ -1,0 +1,140 @@
+[
+    {
+        "elementList": [
+            {
+                "propertyCode": "97260078",
+                "thumbnail": "https://img3.idealista.com/blur/WEB_LISTING/0/id.pro.es.image.master/b4/02/53/981400337.jpg",
+                "externalReference": "00025",
+                "numPhotos": 40,
+                "floor": "3",
+                "price": 129000.0,
+                "propertyType": "flat",
+                "operation": "sale",
+                "size": 120.0,
+                "exterior": true,
+                "rooms": 3,
+                "bathrooms": 2,
+                "address": "barrio Centro",
+                "province": "Alicante",
+                "municipality": "Elche / Elx",
+                "district": "Elche Ciudad",
+                "country": "es",
+                "neighborhood": "Centro",
+                "latitude": 38.2664459,
+                "longitude": -0.6970506,
+                "showAddress": false,
+                "url": "https://www.idealista.com/inmueble/97260078/",
+                "description": "Grupo Corporaci\u00f3n Inmobiliaria pone a la venta este maravilloso piso en el centro de Elche.  Esta vivienda cuenta con una fant\u00e1stica situaci\u00f3n, junto a todos los servicios, en un ambiente tranquilo y agradable.    Se trata de una vivienda de 120 m2 distribuidos en un recibidor que da pie a un amplio sal\u00f3n, una cocina, una habitaci\u00f3n de matrimonio, dos habitaciones simples y dos ba\u00f1os.    La propiedad esta situada en una calle peatonal y cuenta con cafeter\u00edas, farmacias, restaurantes, colegios, parques y zonas infantiles que hacen m\u00e1s atractiva esta vivienda en el centro de la ciudad.",
+                "hasVideo": true,
+                "status": "good",
+                "newDevelopment": false,
+                "hasLift": true,
+                "priceByArea": 1075.0,
+                "detailedType": {
+                    "typology": "flat"
+                },
+                "suggestedTexts": {
+                    "subtitle": "Centro, Elche / Elx",
+                    "title": "Piso"
+                },
+                "hasPlan": true,
+                "has3DTour": false,
+                "has360": true,
+                "hasStaging": false,
+                "topNewDevelopment": false,
+                "superTopHighlight": false
+            }
+        ],
+        "total": 842,
+        "totalPages": 842,
+        "actualPage": 1,
+        "itemsPerPage": 1,
+        "numPaginations": 0,
+        "hiddenResults": false,
+        "summary": [
+            "Comprar",
+            "Viviendas",
+            "Elche / Elx, Alicante",
+            "100.000 a 150.000eur",
+            "Todos los tama\u00f1os"
+        ],
+        "filter": {
+            "locationName": "Elche / Elx, Alicante"
+        },
+        "alertName": "Viviendas en Elche / Elx, Alicante",
+        "paginable": true,
+        "lowerRangePosition": 0,
+        "upperRangePosition": 1
+    },
+    {
+        "elementList": [
+            {
+                "propertyCode": "96175615",
+                "thumbnail": "https://img3.idealista.com/blur/WEB_LISTING/0/id.pro.es.image.master/e0/c4/19/972149347.jpg",
+                "externalReference": "JOSBER-SARELX",
+                "numPhotos": 30,
+                "floor": "3",
+                "price": 123999.0,
+                "propertyType": "flat",
+                "operation": "sale",
+                "size": 122.0,
+                "exterior": true,
+                "rooms": 4,
+                "bathrooms": 2,
+                "address": "barrio Pont Nou-Coraz\u00f3n de Jes\u00fas",
+                "province": "Alicante",
+                "municipality": "Elche / Elx",
+                "district": "Elche Ciudad",
+                "country": "es",
+                "neighborhood": "Pont Nou-Coraz\u00f3n de Jes\u00fas",
+                "latitude": 38.2675993,
+                "longitude": -0.7050584,
+                "showAddress": false,
+                "url": "https://www.idealista.com/inmueble/96175615/",
+                "description": "Muy cerca de la iglesia el Coraz\u00f3n de Jes\u00fas, piso en 3\u00aa plta, con 110m2. , \u00fatiles, con 4 dormitorios, sal\u00f3n con balc\u00f3n, cocina con galer\u00eda, ba\u00f1o con ducha reformado, aseo reformado, armarios empotrados, puertas lacada en blanco, suelo de terrazo, orientaci\u00f3n suroeste, ventanas aluminio y una plaza de garaje en el s\u00f3tano, con acceso directo desde el ascensor Buen acceso de personas con movilidad reducida al edificio, al disponer de rampa y 2 ascensores.",
+                "hasVideo": false,
+                "status": "good",
+                "newDevelopment": false,
+                "hasLift": true,
+                "parkingSpace": {
+                    "hasParkingSpace": true,
+                    "isParkingSpaceIncludedInPrice": true
+                },
+                "priceByArea": 1016.0,
+                "detailedType": {
+                    "typology": "flat"
+                },
+                "suggestedTexts": {
+                    "subtitle": "Pont Nou-Coraz\u00f3n de Jes\u00fas, Elche / Elx",
+                    "title": "Piso"
+                },
+                "hasPlan": false,
+                "has3DTour": false,
+                "has360": false,
+                "hasStaging": false,
+                "superTopHighlight": false,
+                "topNewDevelopment": false
+            }
+        ],
+        "total": 842,
+        "totalPages": 842,
+        "actualPage": 2,
+        "itemsPerPage": 1,
+        "numPaginations": 0,
+        "hiddenResults": false,
+        "summary": [
+            "Comprar",
+            "Viviendas",
+            "Elche / Elx, Alicante",
+            "100.000 a 150.000eur",
+            "Todos los tama\u00f1os"
+        ],
+        "filter": {
+            "locationName": "Elche / Elx, Alicante"
+        },
+        "alertName": "Viviendas en Elche / Elx, Alicante",
+        "lowerRangePosition": 1,
+        "upperRangePosition": 2,
+        "paginable": true
+    }
+]

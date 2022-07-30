@@ -24,10 +24,10 @@ class Idealista:
             url="https://api.idealista.com/oauth/token",
             data="grant_type=client_credentials&scope=read",
             headers=api_headers,
-            verify=False,
         ).json()["access_token"]
 
-    def make_request(self, kind) -> str:
+    def make_request(self, kind: str, params: dict, country: str) -> str:
+
         if kind == "GET":
             pass
         elif kind == "POST":
@@ -36,37 +36,11 @@ class Idealista:
                 "Content-Type": "application/x-www-form-urlencoded",
             }
 
-            params_dic = {
-                "operation": "rent",
-                "locationId": "0-EU-ES-01",
-                "propertyType": "homes",
-            }
-
-            r = requests.post(
-                "https://api.idealista.com/3.5/es/search",
+            return requests.post(
+                url=f"https://api.idealista.com/3.5/{country}/search",
                 headers=headers_dic,
-                params=params_dic,
-            )
-
-            return r.text
+                params=params,
+            ).json()
 
         else:
             raise ValueError(f"{kind} no es un tipo valido de petición")
-
-
-def main():
-    def read_idealista_secrets(keys_path):
-        with open(os.path.join(keys_path, "api_key")) as f:
-            key = f.readline()
-        with open(os.path.join(keys_path, "secret")) as f:
-            secret = f.readline()
-        return key, secret
-
-    idealista = Idealista(
-        *read_idealista_secrets(f"{os.path.expanduser('~')}/.idealista_keys")
-    )
-    print(idealista.make_request("POST"))
-
-
-if __name__ == "__main__":
-    main()
