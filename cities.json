@@ -1,14 +1,11 @@
 {
     "madrid": {
-        "locationId": "0-EU-ES-28-07",
-        "locationLevel": "6"
+        "locationId": "0-EU-ES-28-07"
     },
     "elche": {
-        "locationId": "0-EU-ES-03-04-001-065",
-        "locationLevel": "6"
+        "locationId": "0-EU-ES-03-04-001-065"
     },
     "alicante": {
-        "locationId": "0-EU-ES-03-03-001-014",
-        "locationLevel": "6"
+        "locationId": "0-EU-ES-03-03-001-014"
     }
 }

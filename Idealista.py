@@ -10,12 +10,12 @@ class Idealista:
         self.base64 = base64.b64encode(
             f"{self.api_key}:{self.secret}".encode()
         ).decode()
-        self.access_token = self.get_access_token()
+        self.access_token = self.__get_access_token()
 
     def __str__(self) -> str:
         return f"API KEY {self.api_key}  \nSecret: {self.secret} \nBase64: {self.base64}\nAccess token: {self.access_token}"
 
-    def get_access_token(self):
+    def __get_access_token(self):
         api_headers = {
             "Authorization": f"Basic {self.base64}",
             "Content-Type": "application/x-www-form-urlencoded",
