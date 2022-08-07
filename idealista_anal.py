@@ -44,21 +44,21 @@ def read_idealista_secrets(keys_path):
     return key, secret
 
 
-def get_available_cities(*excluded_cities):
+def get_available_cities(*cities):
     """
-    excluded_cities: pass cities you want to exclude
+    cities: pass cities you want to add
     """
-    return [c for c in json.load(open("cities.json", "r")) if c not in excluded_cities]
+    return [c for c in json.load(open("cities.json", "r")) if c in cities]
 
 
 def main():
-    n_pages_x_request = 100  # number of pages to query
+    n_pages_x_request = 138  # number of pages to query
     max_items_per_request = 50  # max current support is 50
     # num peticiones    = n_pages x n_cities
     idealista = Idealista(
         *read_idealista_secrets(f"{os.path.expanduser('~')}/.idealista_keys")
     )
-    for c in get_available_cities("madrid"):
+    for c in get_available_cities("cordoba"):
         print(f"City: {c}")
         for n_page in range(1, n_pages_x_request):
             """
@@ -77,8 +77,8 @@ def main():
                 "propertyType": "homes",
                 "locale": "es",
                 "maxItems": max_items_per_request,
-                "maxPrice": 200000,
-                "minPrice": 100000,
+                "maxPrice": 9999999,
+                "minPrice": 1,
                 "numPage": n_page,
             }
 
